@@ -34,16 +34,5 @@ build/
 ### VS Code ###
 .vscode/
 
-### Maven ###
-target/
-pom.xml.tag
-pom.xml.releaseBackup
-pom.xml.versionBackup
-pom.xml.next
-
-### System ###
+### Mac OS ###
 .DS_Store
-Thumbs.db
-
-### Logs ###
-*.log
