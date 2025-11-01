@@ -1,5 +1,0 @@
-[build]
-builder = "maven"
-
-[deploy]
-startCommand = "java -jar target/your-project-1.0-SNAPSHOT.jar"
