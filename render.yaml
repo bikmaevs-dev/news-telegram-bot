@@ -1,6 +1,0 @@
-services:
-  - type: web
-    name: news-telegram-bot
-    env: docker
-    docker:
-      dockerfile: Dockerfile
