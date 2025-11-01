@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: news-telegram-bot
+    plan: free
+    env: java
+    buildCommand: mvn clean package -DskipTests
+    startCommand: java -jar target/news-telegram-bot-1.0-SNAPSHOT.jar
+    envVars:
+      - key: BOT_USERNAME
+        value: bikmaev-news-bot
+      - key: BOT_TOKEN
+        value: 8483866878:AAF_emLj7zEf3A3i93lLmEcM5ZIrlCG0HsI
