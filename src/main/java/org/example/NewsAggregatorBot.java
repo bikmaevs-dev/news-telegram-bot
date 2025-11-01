@@ -94,7 +94,7 @@ public class NewsAggregatorBot extends TelegramLongPollingBot{
         message.setChatId(String.valueOf(chatId));
         message.setText(text);
 
-        message.setParseMode("Markdownr");
+        message.setParseMode("Markdown");
 
         try{
             execute(message);

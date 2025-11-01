@@ -11,15 +11,9 @@ public class Main {
             botsApi.registerBot(new NewsAggregatorBot());
             System.out.println("Бот запущен!");
             System.out.println("Бот: @" + new NewsAggregatorBot().getBotUsername());
-            while (true) {
-                Thread.sleep(1000);
-            }
         } catch (TelegramApiException e) {
             System.err.println("Ошибка запуска бота: " + e.getMessage());
             e.printStackTrace();
-        } catch (InterruptedException e) {
-            System.err.println("Поток прерван: " + e.getMessage());
-            Thread.currentThread().interrupt();
         }
     }
 }

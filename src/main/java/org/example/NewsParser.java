@@ -82,6 +82,7 @@ public class NewsParser {
 
         } catch (IOException e){
             System.err.println("Ошибка при подключении к сайту: " + e.getMessage());
+            e.printStackTrace();
         } catch (Exception e){
             System.err.println("Произошла непредвиденная ошибка при парсинге: " + e.getMessage());
             e.printStackTrace();
