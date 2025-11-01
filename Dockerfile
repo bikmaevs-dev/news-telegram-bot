@@ -1,4 +1,4 @@
-FROM openjdk: 11
+FROM openjdk:11
 WORKDIR /app
 COPY . .
 RUN mvn clean package -DskipTests
