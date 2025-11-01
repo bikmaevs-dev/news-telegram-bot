@@ -4,3 +4,8 @@ services:
     env: docker
     docker:
       dockerfile: Dockerfile
+    envVars:
+      - key: BOT_USERNAME
+        value: bikmaev-news-bot
+      - key: BOT_TOKEN
+        value: 8483866878:AAF_emLj7zEf3A3i93lLmEcM5ZIrlCG0HsI
