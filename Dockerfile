@@ -1,11 +1,5 @@
-FROM maven:3.8.6-openjdk-11 AS builder
+FROM openjdk: 11
 WORKDIR /app
-COPY pom.xml .
-COPY src ./src
+COPY . .
 RUN mvn clean package -DskipTests
-
-FROM openjdk:11-jre-slim
-WORKDIR /app
-COPY --from=builder /app/target/news-telegram-bot-1.0-SNAPSHOT.jar app.jar
-
-CMD ["java", "-jar", "app.jar"]
+CMD ["java", "-jar", "target/news-telegram-bot-1.0-SNAPSHOT.jar"]
